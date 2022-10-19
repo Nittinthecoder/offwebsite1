@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithNittin</title>
+    <link rel="stylesheet" href="conformstyle.css">
+</head>
+<body>
+
+    <div class="container-contactform">
+
+        <nav>
+
+            <h5> N </h5>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <!-- <img src="images/cart.png" class="cart-icon"> -->
+
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="contactform">
+                <h1 class="neontext"> CONTACT ME FOR WORK/GENERAL ENQUIRES</h1>
+                <form action="https://formsubmit.co/mathewnittin182002@gmail.com" method="POST">
+                    <div class="name">
+                      <label for="clientname" class="form-label">Name</label>
+                      <input type="name" name="name" required>
+                      <!-- <input type="name" class="form-control" id="clientname" aria-describedby="emailHelp"> -->
+                    </div>
+
+                    <ul>
+                        <div class="email">
+                            <label for="clientemail" class="form-label">Email address</label>
+                            <input type="email" name="email" required>
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- <input type="email" class="form-control" placeholder="Email address "id="clientemail" aria-describedby="emailHelp"> -->
+                        </div>
+                        <div class="emailhelp">
+                            We'll never share your email & phone with anyone else.
+                        </div>
+                    </ul>
+                            
+                    <div class="phone" id="phoneform">
+                      <label for="clientphone" class="form-label">Phone number</label>
+                      <input type="phone" name="phone" required>
+                      <!-- <input type="phone" class="form-control" id="clientphone"> -->
+                    </div>
+
+                    <div class="Enquiry" id="enquiryform">
+                        <label for="Enquiry" class="form-label">Enquiry</label>
+                        <ul>
+                            <textarea id="Enquiry" name="Enquiry" placeholder="Write here..." style="height: 200px;"></textarea>
+                        </ul>  
+                    </div>
+
+                    <div class="checkbutton" id="form-check">  
+                      <input type="checkbox" class="form-check-input" id="isclient">
+                      <label id="tickboxinfo" for="isclient">I want you to work on a project with me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-sm">Submit</button>
+                  </form>
+        </div>
+        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "mathewnittin182002@gmail.com",
+                    Password : "doryvqdtevjfqb",
+                    To : 'mathewnittin182002@gmail.com',
+                    From : document.getElementById("clientemail").value,
+                    Subject : "enquiry done ",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script> -->
+    </div>
+
+    
+</body>
+</html>

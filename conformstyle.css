@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+.container-contactform{
+    width: 100%;
+    height: 100%;
+    background:#46B5D1; 
+    background-size: contain;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+
+}
+
+.container-contactform nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 0;
+
+
+}
+
+
+.container-contactform nav h5 {
+    color: white;
+    font-size: xxx-large;
+    /* font-family: ; */
+}
+
+.container-contactform nav ul li {
+    display: inline-table;
+    list-style: none;
+    margin: 20px;
+}
+
+.container-contactform nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.container-contactform nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.container-contactform nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -4;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#151965;
+    transition: width 0.3s;
+}
+
+.container-contactform nav ul li a:hover::after {
+    width: 80%;
+
+}
+
+.contactform {
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+
+.contactform h1 {
+    color: white;
+    text-shadow:
+    0 0 7px blue
+    0 0 10px blue
+    0 0 21px blue,
+    0 0 42px blue,
+    0 0 82px blue,
+    0 0 92px blue,
+    0 0 102px blue,
+    0 0 151px blue;
+    margin-left: 130px;
+    
+}
+
+.contactform form {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.contactform .name label {
+    color: white;
+    margin-right: 20px;
+}
+
+.contactform .name input{
+    width: 16%;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+.contactform .email {
+    margin-top: 10px;
+}
+
+.contactform .email label {
+    color: white;
+    /* margin-right: 10px; */
+}
+
+.contactform .phone label {
+    color: white;
+    margin-right: 20px;
+
+}
+
+.contactform .email input {
+    margin-left: 130px;
+    margin-top: -20px;
+    width: 52%;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+.contactform .phone {
+    margin-top: 10px;
+}
+
+.contactform .phone input {
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.emailHelp {
+    color: greenyellow;
+    margin-left: 9px;
+    margin-top: 12px;
+}
+
+.contactform form ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contactform form .emailhelp {
+    margin-left: -49px;
+    color: greenyellow;
+}
+
+.contactform #Enquiry {
+    margin-top: -14px;
+    margin-left: 77px;
+    width: 37%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.contactform .Enquiry {
+    color: white;
+    margin-top: 18px;
+}
+
+.contactform #form-check {
+    color: white;
+    margin-top: 18px;
+
+}
+
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.btn.btn-sm{
+    border-color: #515585;
+    color: #515585;
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-sm:hover{
+    border-color: #515585;
+    background: #46B5D1;
+    color: #fff;
+}
+
+h1{
+    font-size: 35px;
+    color: #515585;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.neontext{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #46B5D1,
+        0 0 21px #46B5D1,
+        0 0 42px #515585,
+        0 0 82px #515585,
+        0 0 92px #515585,
+        0 0 102px #515585,
+        0 0 151px #46B5D1;
+}
