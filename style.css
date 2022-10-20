@@ -23,8 +23,8 @@
     /* color: white; */
     font-size: medium;
     position: absolute;
-    bottom: 90px;
-    right: 110px;
+    bottom: 10rem;
+    right: 12rem;
     
 }
 
@@ -33,7 +33,7 @@
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    padding: 25px 0;
+    padding: 8rem 0;
 
 }
 
@@ -41,32 +41,37 @@
 .container nav h5 {
     color: white;
     font-size: xxx-large;
-    /* font-family: ; */
+    position: absolute;
+    top: 1rem;
 }
 
 
 .container nav ul {
     flex: 1;
     text-align: right;
-    padding-right: 30px;
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
 }
 
 .container nav ul li {
     display: inline-table;
     list-style: none;
-    margin: 20px;
+    margin: 3rem;
 }
 
 .container nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: medium;
+    font-weight: 400;
     position: relative;
 }
 
 .container nav ul li a::after {
     content: '';
     width: 0%;
-    height: 3px;
+    height: 3rem;
     position: absolute;
     bottom: -4;
     left: 50%;
@@ -87,14 +92,13 @@
 }
 
 .text p {
-    font-size: 50px;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 .text h1 {
-    font-size: 190px;
-    line-height: 160px;
-    font-weight: -10px;
+    font-size: 21rem;
+    line-height: 17rem;
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: url(/images/back.png);
@@ -110,32 +114,31 @@
 }
 
 .text h3 {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 6rem;
+    font-weight: 800;
 }
 
 .buttons {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 1.4rem;
 }
 
 .buttons button {
     border: none;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    border: 2px solid #fff;
-    border-radius: 20px;
+    border: .3rem solid #fff;
+    border-radius: 20rem;
     padding: 0.55rem 0;
-    width: 130px;
+    width: 11rem;
     font-weight: 600;
     background: lightblue;
     margin: 0 0.5rem;
     cursor: pointer;
     color:#515585;
     background: #46B5D1;
-    
     border-color: #515585;
     transition: all 0.5s ease-in-out;
 
@@ -154,23 +157,11 @@
     bottom: 8%;
 }
 
-.soical-icon img {
-    width: 27px;
-    display: block;
-    margin: 20px 5px;
-    /* background-color: violet; */
-    /* color: white; */
-    border-radius: 16px;
-    border-color: violet;
-    cursor: pointer;
-    /* margin: 12px; */
-    padding: 2px;
-}
 
 .instagram {
     position: absolute;
     right: 6%;
-    bottom: 30px;
+    bottom: 4rem;
 }
 
 
@@ -181,16 +172,15 @@
 }
 
 .instagram img {
-    width: 27px;
+    width: 3rem;
     display: block;
-    margin: 20px 5px;
-    /* background-color: linear-gradient(violet, blue); */
+    position: absolute;
+    bottom: 2rem;
+    right: .5rem;
     color: white;
-    border-radius: 16px;
-    /* border-color: violet; */
+    border-radius: 16rem;
     cursor: pointer;
-    /* margin: 12px; */
-    padding: 2px;
+    
 }
 
 .instagram img:hover {
@@ -223,122 +213,39 @@
 }
 
 
-/* left hand side content box */
 
 
-@media only screen and (max-width:428px) {
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+@media(max-width:998rem) {
+    html {
+        font-size: 45%;
     }
-
-
-
-    .container{
-        width: 100%;
-        height: 100%;
-
-    }
-
-         /* soicals text  */
-    .container h10{
-        display: none;
-    }
-
-    .instagram{
-        display: none;
-    }
-    .container nav{
-        display: flex;
-        width: 70%;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 25px;
-    }
-
-    .container nav ul{
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        position: relative;
-        margin-right: -165px;
-
-    }
-
-    .container nav h5{
-        color: #fff;
-        font-size: xxx-large;
-        position: absolute;
-        left: 40px;
-        top: 40px;
-    }
-    .text{
-        position: absolute;
-        top: 630px;
-        left: 30px; 
-    }
-
-    .container nav h5{
-        color: transparent;
-        -webkit-text-stroke: 1px white;
-        background: url(/images/back.png);
-        -webkit-background-clip: text;
-        background-position: 0 0;
-        animation: back 5s linear infinite;
-    }
-
-    .container h10{
-        color: #fff;
-    }
-
-    @keyframes back {
-        100% {
-            background-position: 4500 0;
-        }
-    }
-
-    .text p{
-        font-size: 25px;
-        font-weight: 500;
-    }
-
-    .text h1{
-        font-size: 60px;
-        line-height: 105px;
-        font-weight: -20px;
-        margin-top: -20px;
-        color: transparent;
-        -webkit-text-stroke: 1px white;
-        background: url(/images/back.png);
-        -webkit-background-clip: text;
-        background-position: 0 0;
-        animation: back 20s linear infinite;
-    }
-
-    @keyframes back {
-        100% {
-            background-position: 3500 0;
-        }
-    }
-
-    .text h3{
-        font-size: 30px;
-        font-weight: 600;
-        margin-top: -20px;
-    }
-
-    .buttons{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 10px;
-    }
-
-
-    
 }
+
+
+@media(max-width:550rem) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media(max-width:450rem) {
+    html {
+        font-size: 30%;
+    }
+
+    .container h10{
+        display: none;
+    }
+
+    .instagram img{
+        display: none;
+    }
+}
+
+
+
+
+
 
 
 
