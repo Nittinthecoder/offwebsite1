@@ -20,7 +20,6 @@
 }
 
 .container h10 {
-    /* color: white; */
     font-size: medium;
     position: absolute;
     bottom: 10rem;
@@ -58,6 +57,7 @@
     display: inline-table;
     list-style: none;
     margin: 3rem;
+    
 }
 
 .container nav ul li a {
@@ -66,22 +66,23 @@
     font-size: medium;
     font-weight: 400;
     position: relative;
+    top: 2rem;
 }
 
 .container nav ul li a::after {
     content: '';
     width: 0%;
-    height: 3rem;
+    height: .8rem;
     position: absolute;
     bottom: -4;
     left: 50%;
     transform: translateX(-50%);
     background:#151965;
-    transition: width 0.3s;
+    transition: width 0.4s;
 }
 
 .container nav ul li a:hover::after {
-    width: 80%;
+    width: 75%;
 
 }
 
@@ -92,7 +93,7 @@
 }
 
 .text p {
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: 600;
 }
 
@@ -127,13 +128,14 @@
 
 .buttons button {
     border: none;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    border: .3rem solid #fff;
-    border-radius: 20rem;
+    border: .5rem solid #fff;
+    border-radius: 29rem;
     padding: 0.55rem 0;
-    width: 11rem;
-    font-weight: 600;
+    width: 15.7rem;
+    height: 5.5rem;
+    font-weight: 800;
     background: lightblue;
     margin: 0 0.5rem;
     cursor: pointer;
@@ -151,14 +153,9 @@
     transition: all 0.5s ease-in-out;
 }
 
-.soical-icon {
-    position: absolute;
-    right: 5%;
-    bottom: 8%;
-}
-
 
 .instagram {
+    
     position: absolute;
     right: 6%;
     bottom: 4rem;
@@ -213,32 +210,54 @@
 }
 
 
+@media(max-width:1338rem) {
+    html,
+    body {
+        font-size: 200%;
+    }
 
+    .container h10{
+        display: inline;
+    }
+    
+}
 
 @media(max-width:998rem) {
-    html {
+    html,
+    body {
         font-size: 45%;
     }
+    
 }
 
 
 @media(max-width:550rem) {
-    html {
+    html,
+    body {
         font-size: 40%;
-    }
-}
 
-@media(max-width:450rem) {
-    html {
-        font-size: 30%;
     }
 
     .container h10{
         display: none;
     }
+    
+}
 
-    .instagram img{
-        display: none;
+
+
+
+@media(max-width:450rem) {
+    html,
+    body{
+        font-size: 32%;
+    }
+}
+
+@media(max-width:354rem) {
+    html,
+    body{
+        font-size: 28%;
     }
 }
 
