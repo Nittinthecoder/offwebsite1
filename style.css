@@ -8,73 +8,62 @@
     font-family: 'poppins', sans-serif;
 }
 
+
 .container {
     width: 100%;
     height: 100%;
-    /* background-image: url(images/cb.gif); */
     background:#46B5D1; 
-    background-size: cover;
-    background-position: center;
-    padding: 0 8%;
-    position: relative;
-}
-
-.container h10 {
-    font-size: medium;
-    position: absolute;
-    bottom: 10rem;
-    right: 12rem;
-    
+    /* background-image: url(images/cb.gif); */
 }
 
 .container nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 8rem 0;
-
-}
-
-
-.container nav h5 {
-    color: white;
-    font-size: xxx-large;
     position: absolute;
     top: 1rem;
-}
+    /* background: white; */
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
+}
 
 .container nav ul {
     flex: 1;
     text-align: right;
     position: absolute;
-    top: 1rem;
-    right: 10rem;
-}
+    top: .9rem;
+    right: 2.5rem;
+    
+    
+} 
 
 .container nav ul li {
     display: inline-table;
     list-style: none;
-    margin: 3rem;
+    margin: 1.6em;
+    
+
     
 }
 
 .container nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: medium;
+    font-size: 1.1rem;
     font-weight: 400;
     position: relative;
-    top: 2rem;
+    top: .1rem;
+
 }
 
+ 
 .container nav ul li a::after {
     content: '';
     width: 0%;
-    height: .8rem;
+    height: .2rem;
     position: absolute;
-    bottom: -4;
+    top: 1.7rem;
     left: 50%;
     transform: translateX(-50%);
     background:#151965;
@@ -82,7 +71,15 @@
 }
 
 .container nav ul li a:hover::after {
-    width: 75%;
+    width: 80%;
+    
+
+}
+
+.container nav h5{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
 
 }
 
@@ -90,21 +87,28 @@
     color: white;
     position: absolute;
     bottom: 7%;
+    padding-left: 3rem;
+    
 }
 
+
 .text p {
-    font-size: 8rem;
-    font-weight: 600;
+    float: left;
+    width: 100%;
+    height: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    
 }
 
 .text h1 {
-    font-size: 21rem;
-    line-height: 17rem;
+    font-size: 12.5rem;
+    width: 100%;
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: url(/images/back.png);
     -webkit-background-clip: text;
-    background-position: 0 0;
+    background-position: 0%;
     animation: back 20s linear infinite;
 }
 
@@ -115,9 +119,14 @@
 }
 
 .text h3 {
-    font-size: 6rem;
+    margin-top: -2rem;
+    font-size: 2.5rem;
     font-weight: 800;
+    
 }
+
+
+/*
 
 .buttons {
     display: flex;
@@ -205,63 +214,47 @@
 }
 
 
+/* .container h10 {
+    font-size: medium;
+    position: absolute;
+    bottom: 10rem;
+    right: 12rem;
+    
+} 
+
 .glow{
     color: #fff;
 }
-
-
-@media(max-width:1338rem) {
-    html,
-    body {
-        font-size: 200%;
+*/
+ @media only screen and (max-width:500px) {
+    .container{
+        width: 100%;
+        height: 100%;
     }
 
-    .container h10{
-        display: inline;
-    }
-    
-}
-
-@media(max-width:998rem) {
-    html,
-    body {
-        font-size: 45%;
-    }
-    
-}
-
-
-@media(max-width:550rem) {
-    html,
-    body {
-        font-size: 40%;
-
+    .container nav ul li{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .container h10{
-        display: none;
+    .text p{
+        font-size: 3rem;
+        padding-left: -51rem;
     }
-    
-}
 
-
-
-
-@media(max-width:450rem) {
-    html,
-    body{
-        font-size: 32%;
+    .text h1{
+        font-size: 6.6rem;
+        padding-top: 2rem;
+        
     }
-}
 
-@media(max-width:354rem) {
-    html,
-    body{
-        font-size: 28%;
+    .text h3{
+        padding-top: 1rem;
+        font-size: 2rem;
     }
-}
 
-
+ }
 
 
 
