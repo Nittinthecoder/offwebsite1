@@ -331,10 +331,10 @@
 
 
 @media only screen and (max-width:500px) {
-/*     .container-about {
-        width: 100%;
-        height: 200%;
-    } */
+    .container-about {
+        /* width: 100%; */
+        height: 50%;
+    }
 
 
     .container-about nav {
@@ -358,12 +358,10 @@
         flex-direction: column;
     }
 
-    
-     .about-main {
+    .about-main{
         width: 100%;
         height: 70%;
     }
-    
 
     .about-left-main {
         /* display: none; */
