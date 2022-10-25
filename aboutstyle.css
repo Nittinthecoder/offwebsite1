@@ -331,10 +331,10 @@
 
 
 @media only screen and (max-width:500px) {
-    /* .container-about {
+    .container-about {
         width: 100%;
-        height: 300%;
-    } */
+        height: 200%;
+    }
 
 
     .container-about nav {
